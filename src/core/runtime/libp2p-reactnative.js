@@ -4,7 +4,6 @@ const Multiplex = require('libp2p-mplex')
 const SECIO = require('libp2p-secio')
 const Railing = require('libp2p-railing')
 const libp2p = require('libp2p')
-const rnRTC = require('react-native-webrtc')
 
 class Node extends libp2p {
   constructor (peerInfo, peerBook, options) {
