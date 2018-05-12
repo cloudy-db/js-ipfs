@@ -172,7 +172,6 @@
     "pull-stream": "^3.6.7",
     "pull-stream-to-stream": "^1.3.4",
     "pull-zip": "^2.0.1",
-    "react-native-webrtc": "git+https://github.com/nazar-pc/react-native-webrtc.git#patch-1",
     "read-pkg-up": "^3.0.0",
     "readable-stream": "2.3.6",
     "stream-to-pull-stream": "^1.7.2",

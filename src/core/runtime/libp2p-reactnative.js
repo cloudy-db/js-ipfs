@@ -1,6 +1,5 @@
 'use strict'
 
-const WebRTCStar = require('libp2p-webrtc-star')
 const Multiplex = require('libp2p-mplex')
 const SECIO = require('libp2p-secio')
 const Railing = require('libp2p-railing')
@@ -10,15 +9,14 @@ const rnRTC = require('react-native-webrtc')
 class Node extends libp2p {
   constructor (peerInfo, peerBook, options) {
     options = options || {}
-    const wrtcstar = new WebRTCStar({id: peerInfo.id, wrtc: rnRTC})
 
     const modules = {
-      transport: [wrtcstar],
+      transport: [],
       connection: {
         muxer: [Multiplex],
         crypto: [SECIO]
       },
-      discovery: [wrtcstar.discovery]
+      discovery: []
     }
 
     if (options.bootstrap) {
